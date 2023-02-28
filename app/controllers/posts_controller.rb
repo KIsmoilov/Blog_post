@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   before_action :post_author
 
   def show
-    @post = @author.posts.find(param[:id])
+    @post = @author.posts.find(params[:id])
   end
 
   def index
