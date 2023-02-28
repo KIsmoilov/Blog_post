@@ -1,17 +1,9 @@
 class PostsController < ApplicationController
-  before_action :post_author
-
   def show
-    @post = @author.posts.find(params[:id])
+    @post = Post.where(author_id: params[:user_id], id: params[:id]).first
   end
 
   def index
-    @posts = @author.posts
-  end
-
-  private
-
-  def post_author
-    @author = User.find(params[:user_id])
+    @posts = Post.where(author_id: params[:user_id])
   end
 end
