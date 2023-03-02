@@ -13,8 +13,8 @@ Post.destroy_all
 User.destroy_all
 
 # User seeder
-user_1 = User.create(name: 'David', photo: 'https://unsplash.com/photos/GHeU0qSKcsI', bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pellentesque ex vitae velit auctor volutpat. Phasellus eget nisl maximus, tristique odio nec, porta arcu. Quisque fermentum viverra sodales. Curabitur commodo, turpis at volutpat blandit, urna felis tincidunt erat, ac porta.', posts_counter: 0)
-user_2 = User.create(name: 'Angela', photo: 'https://unsplash.com/photos/tzON0Fn2xgE', bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pellentesque ex vitae velit auctor volutpat. Phasellus eget nisl maximus, tristique odio nec, porta arcu. Quisque fermentum viverra sodales. Curabitur commodo, turpis at volutpat blandit, urna felis tincidunt erat, ac porta.', posts_counter: 0)
+user_1 = User.create(name: 'David', photo: "https://www.smashbros.com/wiiu-3ds/images/character/toon_link/main.png", bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pellentesque ex vitae velit auctor volutpat. Phasellus eget nisl maximus, tristique odio nec, porta arcu. Quisque fermentum viverra sodales. Curabitur commodo, turpis at volutpat blandit, urna felis tincidunt erat, ac porta.', posts_counter: 0)
+user_2 = User.create(name: 'Angela', photo: "https://www.smashbros.com/wiiu-3ds/images/character/lucina/main.png", bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pellentesque ex vitae velit auctor volutpat. Phasellus eget nisl maximus, tristique odio nec, porta arcu. Quisque fermentum viverra sodales. Curabitur commodo, turpis at volutpat blandit, urna felis tincidunt erat, ac porta.', posts_counter: 0)
 
 p "Created #{User.count} Users"
 
@@ -32,7 +32,7 @@ Comment.create([
                  { post: post_2, author: user_2, text: 'User 2 comment in post 2' },
                  { post: post_3, author: user_1, text: 'User 1 comment in post 3' },
                  { post: post_4, author: user_2, text: 'User 2 comment in post 4' },
-                 { post: post_1, author: user_1, text: 'Uesr 1 comment in post 1' },
+                 { post: post_1, author: user_1, text: 'User 1 comment in post 1' },
                  { post: post_2, author: user_2, text: 'User 2 comment in post 2' }
                ])
 
