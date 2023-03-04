@@ -20,7 +20,14 @@
                     <h3 class="comments"><%= comment.author.name %>:     <%= comment.text %></h3>
                 <% end %>
             </div>
-
+            <div class="like_comment">
+                <%= form_with url: post_likes_path(post) do |form| %>
+                    <%= form.submit "Like", class: "btn" %>
+                <% end %>
+                <%= form_with url: post_likes_path(post) do |form| %>
+                    <%= form.submit "Comment", class: "btn" %>
+                <% end %>
+            </div>
         </div>
     <% end%>
 
