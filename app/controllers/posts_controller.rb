@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   def show
-    @post = Post.where(author_id: params[:user_id], id: params[:id]).first
-    @comments = @post.comments
+    @post = Post.includes(comments: :author).find_by(author_id: params[:user_id], id: params[:id])
+    @comments = @post.comments.includes(:author)
   end
 
   def index
