@@ -16,6 +16,7 @@
 
 @import "posts.css";
 @import "user.css";
+@import "current_user.css";
 
 *,
 *::after,
