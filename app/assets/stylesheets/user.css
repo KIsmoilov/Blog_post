@@ -143,32 +143,38 @@ button {
 
  .field,
 .actions {
- padding-bottom: 10px;
+  padding-bottom: 10px;
 }
+
 .title_login {
- text-align: center;
- padding-bottom: 20px;
- font-size: 26px;
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 26px;
 }
+
 .label {
- font-size: 18px;
+  font-size: 18px;
 }
+
 .input {
- width: 320px;
- height: 30px;
- margin-top: 3px;
- padding-left: 5px;
+  width: 320px;
+  height: 30px;
+  margin-top: 3px;
+  padding-left: 5px;
 }
+
 .actions {
- margin: 5px 0;
+  margin: 5px 0;
 }
+
 .btn-submit {
- width: auto;
- padding: 2px 10px;
- background-color: burlywood;
- border-radius: 10px;
- font-size: 18px;
+  width: auto;
+  padding: 2px 10px;
+  background-color: burlywood;
+  border-radius: 10px;
+  font-size: 18px;
 }
+
 .field-third {
- margin-bottom: 10px;
+  margin-bottom: 10px;
 }
