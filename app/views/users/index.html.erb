@@ -1,10 +1,4 @@
 <div class="users-container">
-    <nav>
-    <ul>
-    <li><%= link_to "Home", users_path, class: "nav-link" %></li>
-    <li><%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "nav-link"  %></li>
-    </ul>
-    </nav>
     <h1 class="users-heading">Users Count <%= @users.length%></h1>
     <% @users.each do |user| %>
         <%= link_to user_path(user.id), class:"text-dec" do %>

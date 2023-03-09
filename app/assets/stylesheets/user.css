@@ -134,14 +134,14 @@ button {
   background-color: white;
   width: auto;
   height: auto;
-  margin-top: 7%;
+  margin-top: 5%;
   padding: 4% 3%;
   border-radius: 10px;
   border: 1px solid black;
   box-shadow: 10px 10px 10px grey;
- }
+}
 
- .field,
+.field,
 .actions {
   padding-bottom: 10px;
 }
@@ -177,4 +177,12 @@ button {
 
 .field-third {
   margin-bottom: 10px;
+}
+
+.text_area {
+  width: 320px;
+  height: 60px;
+  margin-top: 3px;
+  padding-left: 5px;
+  resize: vertical;
 }
