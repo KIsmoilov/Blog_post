@@ -10,19 +10,18 @@
 Like.destroy_all
 Comment.destroy_all
 Post.destroy_all
-User.destroy_all
 
 # User seeder
-user_1 = User.create(name: 'David', photo: "https://www.smashbros.com/wiiu-3ds/images/character/toon_link/main.png", bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pellentesque ex vitae velit auctor volutpat. Phasellus eget nisl maximus, tristique odio nec, porta arcu. Quisque fermentum viverra sodales. Curabitur commodo, turpis at volutpat blandit, urna felis tincidunt erat, ac porta.', posts_counter: 0)
-user_2 = User.create(name: 'Angela', photo: "https://www.smashbros.com/wiiu-3ds/images/character/lucina/main.png", bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pellentesque ex vitae velit auctor volutpat. Phasellus eget nisl maximus, tristique odio nec, porta arcu. Quisque fermentum viverra sodales. Curabitur commodo, turpis at volutpat blandit, urna felis tincidunt erat, ac porta.', posts_counter: 0)
+user_1 = User.first
+user_2 = User.second
 
 p "Created #{User.count} Users"
 
 # Post seeder
-post_1 = Post.create(author: user_1, title: 'Post 1', text: 'One Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod.', comments_counter: 0, likes_counter: 0)
-post_2 = Post.create(author: user_2, title: 'Post 2', text: 'Two Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod.', comments_counter: 0, likes_counter: 0)
-post_3 = Post.create(author: user_1, title: 'Post 3', text: 'Three Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod.', comments_counter: 0, likes_counter: 0)
-post_4 = Post.create(author: user_2, title: 'Post 4', text: 'Four Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod.', comments_counter: 0, likes_counter: 0)
+post_1 = Post.create(author: user_1, title: 'Post 1', text: 'One Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod.')
+post_2 = Post.create(author: user_2, title: 'Post 2', text: 'Two Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod.')
+post_3 = Post.create(author: user_1, title: 'Post 3', text: 'Three Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod.')
+post_4 = Post.create(author: user_2, title: 'Post 4', text: 'Four Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod.')
 
 p "Created #{Post.count} Posts"
 
