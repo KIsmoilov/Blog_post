@@ -125,3 +125,18 @@ button {
   align-self: flex-end;
   margin-right: 15%;
 }
+
+.container-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: white;
+  width: auto;
+  height: auto;
+  margin-top: 7%;
+  padding: 4% 3%;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 10px 10px 10px grey;
+ }
