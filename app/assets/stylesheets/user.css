@@ -126,6 +126,28 @@
   font-size: 18px;
 }
 
+.btn_delete_comment {
+  width: auto;
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: red;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.btn_delete_post {
+  width: auto;
+  padding: 5px 15px;
+  background-color: red;
+  border-radius: 15px;
+  font-size: 18px;
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
 .like_comment {
   display: flex;
   gap: 10px;
