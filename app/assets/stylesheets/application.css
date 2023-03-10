@@ -16,6 +16,7 @@
 
 @import "posts.css";
 @import "user.css";
+@import "navbar.css";
 
 *,
 *::after,
@@ -32,5 +33,5 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(249, 226, 227);
+  background-color: rgb(255, 242, 225);
 }
