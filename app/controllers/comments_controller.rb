@@ -5,6 +5,10 @@ class CommentsController < ApplicationController
     @user = @post.author
   end
 
+  def index
+    @comments = Comment.all.where(author_id: params.require(:user_id), post_id: params.require(:post_id))
+  end
+
   def create
     @comment = Comment.new(comments_params)
     @comment.author = current_user
@@ -17,9 +21,7 @@ class CommentsController < ApplicationController
   end
 
   def destroy
-    @user = User.find_by(id: params[:user_id])
-    @post = @user.posts.find_by(id: params[:post_id])
-    @comment = @post.comments.find_by(id: params[:comment_id])
+    Comment.find_by(id: params[:comment_id]).destroy
     return render file: "#{Rails.root}/public/404.html", status: :not_found, layout: false if @comment.nil?
 
     redirect_to user_post_path(@user, params[:post_id])
