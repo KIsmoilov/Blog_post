@@ -115,7 +115,8 @@
   margin: 20px;
 }
 
-.btn, .btn_comment {
+.btn,
+.btn_comment {
   display: flex;
   justify-content: center;
   width: auto;
@@ -190,6 +191,6 @@
   width: 320px;
   height: 60px;
   margin-top: 3px;
-  padding 5px;
+  padding: 5px;
   resize: vertical;
 }

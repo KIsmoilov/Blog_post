@@ -40,3 +40,10 @@ nav {
   background-color: burlywood;
   margin: 20px;
 }
+
+.nav_name {
+  font-size: 25px;
+  padding-left: 20px;
+  text-decoration: none;
+  color: white;
+}

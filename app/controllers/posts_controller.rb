@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  # load_and_authorize_resource param_method: :post_params, only: %i[create]
+  load_and_authorize_resource param_method: :post_params, only: %i[create]
 
   def show
     @post = Post.includes(comments: :author).find_by(author_id: params[:user_id], id: params[:id])
