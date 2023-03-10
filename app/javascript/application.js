@@ -2,13 +2,8 @@
 import "@hotwired/turbo-rails";
 import "controllers";
 
-var alertMessage = document.getElementById("alert_message");
-var noticeMessage = document.getElementById("notice_message");
+var noticeMessage = document.querySelector("#notice_message");
 
 setTimeout(function () {
   noticeMessage.style.display = "none";
-}, 2000);
-
-setTime(function () {
-  alertMessage.style.display = "none";
 }, 2000);
