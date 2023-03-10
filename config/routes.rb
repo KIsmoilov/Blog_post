@@ -12,6 +12,9 @@ Rails.application.routes.draw do
   post '/users/:user_id/posts/:post_id/comments', to: 'comments#create', as: 'create_user_post_comment'
   delete '/users/:user_id/posts/:post_id/comments/:comment_id', to: 'comments#destroy', as: 'delete_user_post_comment'
 
-
- 
+  namespace :api do
+    get "/users/:user_id/posts", to: "posts#index", as: "user_posts_api"
+    get "/users/:user_id/posts/:post_id/comments", to: "comments#index", as: "post_comments_api"
+    post "/users/:user_id/posts/:post_id/comments", to: "comments#create", as: "create_comment_api"
+  end
 end
