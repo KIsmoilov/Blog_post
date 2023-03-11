@@ -1,0 +1,7 @@
+<div class="users-container">
+  <div class="comment-box">
+    <% @comments.each do |comment|%>
+      <h3 class="comments"><%= comment.author.name %>:  <%= comment.text %></h3>
+    <% end %>
+  </div>
+</div>
